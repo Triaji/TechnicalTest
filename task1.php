@@ -1,5 +1,5 @@
 <?php
-function buzzFizz($startRange, $endRange){
+function buzzFizz($startRange = 0, $endRange = 0){
 	$valid = true;
 	if (!is_numeric($startRange)) 
 	{
@@ -32,7 +32,7 @@ function buzzFizz($startRange, $endRange){
 			$end = $startRange;
 		}
 		$result = "";
-		for ($i = $start; $i < $end; $i++)
+		for ($i = $start; $i <= $end; $i++)
 		{
 			if ($i > $start)
 				{
