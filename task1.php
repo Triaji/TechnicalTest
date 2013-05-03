@@ -6,7 +6,7 @@ function buzzFizz($startRange, $endRange){
 		$valid = false;
 		echo "- Start Range has to be an integer \n";
 	}
-	else if ($startRange < 0) 
+	else if ($startRange <= 0) 
 	{
 		$valid = false;
 		echo "- Start Range has to be a positive integer \n";
@@ -17,7 +17,7 @@ function buzzFizz($startRange, $endRange){
 		$valid = false;
 		echo "- End Range has to be an integer \n";
 	} 
-	else if ($endRange < 0) 
+	else if ($endRange <= 0) 
 	{
 		$valid = false;
 		echo "- End Range has to be a positive integer \n";
